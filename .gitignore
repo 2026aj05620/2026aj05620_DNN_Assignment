@@ -1,0 +1,10 @@
+# Ignore datasets
+data/
+*.zip
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore Colab/Jupyter checkpoints
+.ipynb_checkpoints/
