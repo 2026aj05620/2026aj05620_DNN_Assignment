@@ -3,7 +3,7 @@
 **Student ID:** 2026aj05620
 
 ## Environment
-- **Platform:** Kaggle (GPU T4 x2 / P100) and Google Colab (T4 GPU)
+- **Platform:** Kaggle (GPU T4 x2 / P100) or Google Colab (T4 GPU)
                 This is due to the issue in running P2 need to go to Kaggle
 - **Python:** 3.10+
 - **Core Libraries:** PyTorch 2.x, NumPy, Pandas, Matplotlib, scikit-learn
@@ -15,10 +15,13 @@
 3. Open `problem2/problem2.ipynb`. Run the notebook from top to bottom. It will automatically download the Tiny Shakespeare dataset into `problem2/data/`.
 4. All plots will be saved to the respective `figures/` directories, and metrics will be appended to the shared `results.csv` in the root folder.
 
+## Bonus Completed
+I successfully completed the optional bonus task (Option 1: LSTM vs. Transformer character model). The training, comparison plot (`p2_bonus_lstm_vs_transformer.png`), and results row are included at the end of `problem2.ipynb`.
+
 ## Total Run Time on T4 GPU
 - **`problem1.ipynb`:** ~15 minutes (includes 3 RNN models × 3 seeds, adding problem sweep, and ablations).
-- **`problem2.ipynb`:** ~15 minutes (includes HAR Transformer training and 3000 training steps for the Language Model).
-- **Total:** ~30 minutes.
+- **`problem2.ipynb`:** ~25 minutes (includes HAR Transformer training, the 3000-step Transformer LM, and the 3000-step LSTM Bonus LM).
+- **Total:** ~40 minutes.
 
 ## My Variant & Assumptions
 Because the "Individualisation" variants table was not included in the assignment PDF, I made the following reasonable assumptions:
